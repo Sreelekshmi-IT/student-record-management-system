@@ -26,7 +26,15 @@ public class StudentRecordSystem {
         for (int i = 0; i < n; i++) {
             System.out.println(names[i] + " - " + marks[i]);
         }
+int sum = 0;
 
+for (int i = 0; i < n; i++) {
+    sum += marks[i];
+}
+
+double average = (double) sum / n;
+
+System.out.println("Average Marks: " + average);
         sc.close();
     }
 }
