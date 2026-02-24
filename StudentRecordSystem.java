@@ -35,6 +35,17 @@ for (int i = 0; i < n; i++) {
 double average = (double) sum / n;
 
 System.out.println("Average Marks: " + average);
+        int highest = marks[0];
+String topper = names[0];
+
+for (int i = 1; i < n; i++) {
+    if (marks[i] > highest) {
+        highest = marks[i];
+        topper = names[i];
+    }
+}
+
+System.out.println("Highest Scoring Student: " + topper + " (" + highest + ")");
         sc.close();
     }
 }
